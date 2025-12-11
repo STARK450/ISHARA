@@ -7,21 +7,28 @@ import About from './components/About';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import CartDrawer from './components/CartDrawer';
+import InstagramPromo from './components/InstagramPromo';
+import { CartProvider } from './context/CartContext';
 
 function App() {
   return (
-    <div className="min-h-screen bg-earth-50">
-      <Navbar />
-      <main>
-        <Hero />
-        <Values />
-        <ProductGallery />
-        <About />
-        <Testimonials />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <CartProvider>
+      <div className="min-h-screen bg-earth-50">
+        <Navbar />
+        <CartDrawer />
+        <main>
+          <Hero />
+          <Values />
+          <ProductGallery />
+          <About />
+          <Testimonials />
+          <InstagramPromo />
+          <Contact />
+        </main>
+        <Footer />
+      </div>
+    </CartProvider>
   );
 }
 

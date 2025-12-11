@@ -11,12 +11,12 @@ const About: React.FC = () => {
               <img 
                 src="https://drive.google.com/thumbnail?id=1ED-2Qz0RHHSVrdP3aGHlacwW0U_Qrm5h&sz=w2000" 
                 alt="Artisan working" 
-                className="rounded-lg translate-y-8 object-cover shadow-lg"
+                className="rounded-lg translate-y-8 object-cover shadow-lg h-64 w-full"
               />
               <img 
                 src="https://drive.google.com/thumbnail?id=1P3_93yzBqbpPQqjCrGx9C5Ok1lvFz4fR&sz=w2000" 
                 alt="Materials" 
-                className="rounded-lg object-cover shadow-lg"
+                className="rounded-lg object-cover shadow-lg h-64 w-full"
               />
             </div>
             {/* Decorative Element */}
@@ -41,7 +41,7 @@ const About: React.FC = () => {
               </p>
             </div>
             <div className="pt-4">
-              <img src="https://picsum.photos/seed/signature/200/80" alt="Founder Signature" className="opacity-60 h-12" />
+              <span className="font-serif text-3xl text-earth-400 italic">Ishara</span>
             </div>
           </div>
         </div>
