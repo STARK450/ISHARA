@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ishara Bags | Sustainable & Handmade</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              earth: {
+                50: '#f7f6f4',
+                100: '#e9e6df',
+                200: '#d5cfc4',
+                300: '#b8ae9d',
+                400: '#9b8c78',
+                500: '#84735e',
+                600: '#6b5b4a',
+                700: '#56493d',
+                800: '#463b33',
+                900: '#3a312c',
+              },
+              nature: {
+                50: '#f2fcf5',
+                100: '#e1f8e8',
+                200: '#c3eed0',
+                300: '#94deb0',
+                400: '#5ec389',
+                500: '#39a76d',
+                600: '#298654',
+                700: '#236b45',
+                800: '#1f553a',
+                900: '#1a4631',
+              }
+            },
+            fontFamily: {
+              serif: ['"Cormorant Garamond"', 'serif'],
+              sans: ['"Montserrat"', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        scroll-behavior: smooth;
+      }
+      .fade-in-up {
+        animation: fadeInUp 0.8s ease-out forwards;
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.560.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-earth-50 text-earth-900 antialiased font-sans">
+    <div id="root"></div>
+  </body>
+</html>
