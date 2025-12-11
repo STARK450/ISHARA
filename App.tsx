@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import CartDrawer from './components/CartDrawer';
 import InstagramPromo from './components/InstagramPromo';
+import ScrollToTop from './components/ScrollToTop';
 import { CartProvider } from './context/CartContext';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <div className="min-h-screen bg-earth-50">
         <Navbar />
         <CartDrawer />
+        <ScrollToTop />
         <main>
           <Hero />
           <Values />
